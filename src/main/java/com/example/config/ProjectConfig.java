@@ -12,6 +12,10 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ProjectConfig {
 
+    /**
+     * Bean annotation, which lets Spring know that it needs to call this method
+     * when it initializes its context and adds the returned value to the context.
+     */
     @Bean
     Vehicle vehicle() {
         var veh = new Vehicle();
